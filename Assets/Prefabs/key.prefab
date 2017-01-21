@@ -22,15 +22,9 @@ GameObject:
   - component: {fileID: 212524308177373296}
   - component: {fileID: 61522672109920094}
   - component: {fileID: 114412198384581010}
-<<<<<<< HEAD
-  - component: {fileID: 50819270744469764}
-  - component: {fileID: 95287894864516620}
-  - component: {fileID: 114774914864989114}
-=======
   - component: {fileID: 50284102503513518}
   - component: {fileID: 95187971504304202}
   - component: {fileID: 114508704657335118}
->>>>>>> 545d16865b76ab370c70708be685bafb93543ea3
   m_Layer: 0
   m_Name: key
   m_TagString: Untagged
@@ -46,20 +40,12 @@ Transform:
   m_GameObject: {fileID: 1472083936551916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9, y: -36, z: 0}
-<<<<<<< HEAD
-  m_LocalScale: {x: 2, y: 2, z: 2}
-=======
   m_LocalScale: {x: 2.8853977, y: 2.8853955, z: 2.8853955}
->>>>>>> 545d16865b76ab370c70708be685bafb93543ea3
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!50 &50819270744469764
-=======
 --- !u!50 &50284102503513518
->>>>>>> 545d16865b76ab370c70708be685bafb93543ea3
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
@@ -93,11 +79,7 @@ BoxCollider2D:
   m_Offset: {x: -0.01819369, y: -0.009097326}
   serializedVersion: 2
   m_Size: {x: 2.3458345, y: 1.37153}
-<<<<<<< HEAD
---- !u!95 &95287894864516620
-=======
 --- !u!95 &95187971504304202
->>>>>>> 545d16865b76ab370c70708be685bafb93543ea3
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -125,12 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67ef944bdc80ec4bbc78c026cb3c6d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
---- !u!114 &114774914864989114
-=======
   key_clip: {fileID: 8300000, guid: fdef7732c1a7b144a91379f701e34369, type: 3}
 --- !u!114 &114508704657335118
->>>>>>> 545d16865b76ab370c70708be685bafb93543ea3
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
