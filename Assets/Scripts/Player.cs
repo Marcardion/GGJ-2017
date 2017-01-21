@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
 	private Rigidbody2D pRigidbody;
 	private Animator pAnimator;
 	private bool hasKey = false;
-	private float moveForce = 10;
+	private float moveForce = 15;
 	//private GameObject soundWave;
 
 	// Use this for initialization
@@ -30,12 +30,20 @@ public class Player : MonoBehaviour {
 		ChangePlayerDirection (moveDirectionX);
 
 		pRigidbody.velocity = new Vector2(moveDirectionX*moveForce, moveDirectionY*moveForce);
+		pAnimator.SetBool ("playerMoving", PlayerIsMoving ());
 	}
 
 	void ChangePlayerDirection(float moveX) {
 		if (moveX != 0) {
 			transform.localScale = new Vector2 (moveX, transform.localScale.y);
 		}
+	}
+
+	bool PlayerIsMoving() {
+		if (Mathf.Abs (pRigidbody.velocity.x) > 0.1 || Mathf.Abs (pRigidbody.velocity.y) > 0.1) {
+			return true;
+		}
+		return false;				
 	}
 
 	void KeyCollected() {

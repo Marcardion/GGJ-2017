@@ -23,10 +23,10 @@ public class Wave : MonoBehaviour {
 	}
 
 	void PulseWave() {
-		if((transform.localScale - maxScale).sqrMagnitude < 0.1){
+		if((transform.localScale - maxScale).sqrMagnitude < 0.2){
 			transform.localScale = Vector3.one;
 		} else {
-			transform.localScale = Vector3.Lerp(transform.localScale, maxScale, Time.deltaTime*1.5f);
+			transform.localScale = Vector3.Lerp(transform.localScale, maxScale, Time.deltaTime*1.2f);
 		}
 	}
 }
