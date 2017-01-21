@@ -5,12 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 	
 	private Rigidbody2D pRigidbody;
+	private Animator pAnimator;
 	private bool hasKey = false;
-	private float moveForce = 5;
+	private float moveForce = 10;
+	//private GameObject soundWave;
 
 	// Use this for initialization
-	void Start () {		
+	void Start () {
+		//soundWave = Resources.Load ("SoundWave") as GameObject;
 		pRigidbody = gameObject.GetComponent<Rigidbody2D>();
+		pAnimator = gameObject.GetComponentInChildren<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -23,7 +27,15 @@ public class Player : MonoBehaviour {
 			moveDirectionY = 0;
 		}
 
+		ChangePlayerDirection (moveDirectionX);
+
 		pRigidbody.velocity = new Vector2(moveDirectionX*moveForce, moveDirectionY*moveForce);
+	}
+
+	void ChangePlayerDirection(float moveX) {
+		if (moveX != 0) {
+			transform.localScale = new Vector2 (moveX, transform.localScale.y);
+		}
 	}
 
 	void KeyCollected() {

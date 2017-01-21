@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: pose_inicial
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: 426f6e65732f7175616472696c2062
+    localPosition: {x: 2.2962446, y: -0.43974733, z: 0.12109381}
+    localRotation: {x: 0, y: 0, z: 0.7534941, w: 0.65745467}
+    localScale: {x: 0.7217146, y: 0.7217146, z: 0.7217146}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e612062
+    localPosition: {x: 1.2398614, y: -0.00000008258755, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.054832984, w: 0.9984956}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f706573636f636f2062
+    localPosition: {x: 2.105059, y: 0.00000009255018, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.13542786, w: 0.99078727}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f706573636f636f20622f6361626563612062
+    localPosition: {x: 0.9270473, y: -0.0000000661239, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.716198, w: 0.69789714}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f706573636f636f20622f63616265636120622f6c5f6f6c686f2062
+    localPosition: {x: 2.3027415, y: 1.2280831, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f706573636f636f20622f63616265636120622f725f6f6c686f2062
+    localPosition: {x: 0.9587568, y: 0.9994211, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.000000029802315, w: 1}
+    localScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f706573636f636f20622f63616265636120622f725f736f6272616e63656c68612062
+    localPosition: {x: 0.16733398, y: 1.6759791, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.1316457, w: 0.9912969}
+    localScale: {x: 0.9999934, y: 0.9999934, z: 0.9999935}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f706573636f636f20622f63616265636120622f6c5f736f6272616e63656c68612062
+    localPosition: {x: 2.3732662, y: 1.8172814, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.93744403, w: 0.34813625}
+    localScale: {x: 0.99999356, y: 0.99999356, z: 0.9999935}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f706573636f636f20622f63616265636120622f62616e64616e612062
+    localPosition: {x: -1.3694649, y: 0.22330678, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9265996, w: 0.37604952}
+    localScale: {x: 0.99999344, y: 0.99999344, z: 0.9999935}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f725f627261636f2062
+    localPosition: {x: 1.7681062, y: 1.2163053, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9960347, w: 0.08896619}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f725f627261636f20622f725f616e7465627261636f2062
+    localPosition: {x: 1.745524, y: 0.00000023841858, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.06721713, w: 0.9977384}
+    localScale: {x: 0.36686456, y: 0.36686474, z: 0.36686385}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f725f627261636f20622f725f616e7465627261636f20622f725f6d616f2062
+    localPosition: {x: 3.971928, y: 0.0000006488699, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.11819559, w: 0.9929904}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f6c5f627261636f2062
+    localPosition: {x: 1.2557417, y: -1.1996206, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9990675, w: 0.043176282}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f6c5f627261636f20622f6c5f616e7465627261636f2062
+    localPosition: {x: 1.5426983, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.046791125, w: 0.99890476}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f636f6c756e6120622f6c5f627261636f20622f6c5f616e7465627261636f20622f6c5f6d616f2062
+    localPosition: {x: 1.4409068, y: 0.00000019767322, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.0751056, w: 0.99717563}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f6c5f636f78612062
+    localPosition: {x: -0.4168244, y: -0.61444676, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.99622214, w: 0.08684205}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f6c5f636f786120622f6c5f7065726e612062
+    localPosition: {x: 1.6136975, y: -0.000000007450581, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.0023417147, w: 0.99999726}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f6c5f636f786120622f6c5f7065726e6120622f6c5f70652062
+    localPosition: {x: 1.6172135, y: -0.00000023493604, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.6633866, w: -0.74827695}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f725f636f78612062
+    localPosition: {x: -0.15306918, y: 0.71094584, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.99809116, w: 0.06175813}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f725f636f786120622f725f7065726e612062
+    localPosition: {x: 1.7746676, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.031304788, w: 0.9995099}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: 426f6e65732f7175616472696c20622f725f636f786120622f725f7065726e6120622f725f70652062
+    localPosition: {x: 1.5593706, y: 0.00000014150282, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.67749745, w: 0.73552513}
+    localScale: {x: 1, y: 1, z: 1}

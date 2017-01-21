@@ -5,12 +5,14 @@ using UnityEngine;
 public class Wave : MonoBehaviour {
 
 	private GameObject player;
-	private Vector3 maxScale = new Vector3(4,4,1);
+	private float maxScaleFactor = 25;
+	private Vector3 maxScale;
 
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
+		maxScale = new Vector3 (maxScaleFactor, maxScaleFactor, 1);
 	}
 	
 	// Update is called once per frame
@@ -24,7 +26,7 @@ public class Wave : MonoBehaviour {
 		if((transform.localScale - maxScale).sqrMagnitude < 0.1){
 			transform.localScale = Vector3.one;
 		} else {
-			transform.localScale = Vector3.Lerp(transform.localScale, maxScale, Time.deltaTime);
+			transform.localScale = Vector3.Lerp(transform.localScale, maxScale, Time.deltaTime*1.5f);
 		}
 	}
 }
