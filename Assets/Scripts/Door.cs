@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour {
 
+	public AudioClip open_door;
 	private bool doorOpened = false;
 
 	void OnCollisionEnter2D(Collision2D coll) {
@@ -17,6 +18,7 @@ public class Door : MonoBehaviour {
 		if(!doorOpened) {
 			doorOpened = true;
 			Debug.Log("Door Opened!");
+			SoundManager.instance.PlaySingle (open_door);
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
 		//MakeNoise and go to next level
