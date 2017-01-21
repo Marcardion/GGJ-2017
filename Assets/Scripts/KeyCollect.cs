@@ -10,6 +10,7 @@ public class KeyCollect : MonoBehaviour {
 		if(!keyCollected) {			
 			if(coll.gameObject.tag=="Player") {	
 				keyCollected = true;
+				GetComponent<Animator> ().SetTrigger ("Disappear");
 				coll.SendMessage("KeyCollected");
 			}
 		}
