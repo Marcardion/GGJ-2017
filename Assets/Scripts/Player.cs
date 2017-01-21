@@ -12,7 +12,6 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//soundWave = Resources.Load ("SoundWave") as GameObject;
 		pRigidbody = gameObject.GetComponent<Rigidbody2D>();
 		pAnimator = gameObject.GetComponentInChildren<Animator> ();
 	}
