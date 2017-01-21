@@ -17,7 +17,7 @@ public class Wave : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = player.transform.position;
+		transform.position = new Vector2(player.transform.position.x, player.transform.position.y - 2);
 
 		PulseWave();
 	}
