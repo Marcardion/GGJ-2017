@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;	
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Enemy_AI : MonoBehaviour {
 
+	public enum Enemy_Type { Guard, Patrol };
+
+	public Enemy_Type my_type;
+
 	public Transform target;
+
 	public Vector3 start_pos;
+
+	public Vector3[] patrol_list;
+	private int patrol_index = 0;
 
 	NavMeshAgent agent;
 
-	public bool move = false;
+	public bool chase_player = false;
 
 	// Use this for initialization
 	void Start () {
@@ -24,16 +33,31 @@ public class Enemy_AI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		Vector3 direction = target.position - transform.position;
-
-		Debug.DrawRay (transform.position, direction, Color.black);
-
-		if (move) {
+		if (chase_player) {
 			agent.SetDestination (target.position);
 		} else {
-			agent.SetDestination (start_pos);
+			if (my_type == Enemy_Type.Guard) {
+				agent.SetDestination (start_pos);
+			} else if (my_type == Enemy_Type.Patrol) 
+			{
+				Patrol ();
+			}
 		}
 
+	}
+
+	void Patrol ()
+	{
+		if (Vector3.Distance (transform.position, patrol_list [patrol_index]) < 1) 
+		{
+			patrol_index++;
+			if(patrol_index >= patrol_list.Length)
+			{
+				patrol_index = 0;
+			}
+		}
+
+		agent.SetDestination (patrol_list [patrol_index]);
 	}
 
 	void  OnTriggerStay (Collider collider)
@@ -49,11 +73,11 @@ public class Enemy_AI : MonoBehaviour {
 				
 				if (hit.collider.CompareTag ("Player")) 
 				{
-					move = true;
+					chase_player = true;
 				}
 				else 
 				{
-					move = false;
+					chase_player = false;
 				}
 
 			}
@@ -65,7 +89,22 @@ public class Enemy_AI : MonoBehaviour {
 	{
 		if (collider.CompareTag ("Player")) 
 		{
-			move = false;
+			chase_player = false;
 		}
+	}
+
+	void OnCollisionEnter (Collision collision)
+	{
+		if (collision.collider.CompareTag ("Player")) 
+		{
+			Debug.Log ("Attack");
+			StartCoroutine (EndGame ());
+		}
+	}
+
+	IEnumerator EndGame ()
+	{
+		yield return new WaitForSeconds (2f);
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 	}
 }
