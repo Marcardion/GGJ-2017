@@ -19,8 +19,14 @@ public class Door : MonoBehaviour {
 			doorOpened = true;
 			Debug.Log("Door Opened!");
 			SoundManager.instance.PlaySingle (open_door);
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			StartCoroutine (WaitDelay ());
 		}
 		//MakeNoise and go to next level
+	}
+
+	IEnumerator WaitDelay()
+	{
+		yield return new WaitForSeconds (2.5f);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }
