@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee839d2dd906d6a42bdbb8a9bdf086d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open_door: {fileID: 8300000, guid: 35ca95eee070c6f4f90dea6186c4510d, type: 3}
 --- !u!212 &212126313403174060
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67ef944bdc80ec4bbc78c026cb3c6d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_clip: {fileID: 8300000, guid: fdef7732c1a7b144a91379f701e34369, type: 3}
+  key_clip: {fileID: 8300000, guid: 486b673d1081e4a4e84590ac5217c2f5, type: 3}
 --- !u!114 &114508704657335118
 MonoBehaviour:
   m_ObjectHideFlags: 1
