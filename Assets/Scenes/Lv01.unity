@@ -387,6 +387,21 @@ Prefab:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82101003320013984, guid: 7d90830dcbc50e74da774beb423e200f,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.603
+      objectReference: {fileID: 0}
+    - target: {fileID: 82279895641024870, guid: 7d90830dcbc50e74da774beb423e200f,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82279895641024870, guid: 7d90830dcbc50e74da774beb423e200f,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 400
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d90830dcbc50e74da774beb423e200f, type: 2}
   m_IsPrefabParent: 0
@@ -589,6 +604,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114541600826656008, guid: beec3684b6ab2094bb0bb713ccc19248,
+        type: 2}
+      propertyPath: heart_sound
+      value: 
+      objectReference: {fileID: 8300000, guid: f7fab54541382134c9551a0033ce85ca, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beec3684b6ab2094bb0bb713ccc19248, type: 2}
   m_IsPrefabParent: 0
