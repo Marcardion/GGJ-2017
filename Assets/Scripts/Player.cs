@@ -52,8 +52,10 @@ public class Player : MonoBehaviour {
 
 	void TryDoor(GameObject door) {
 		Debug.Log("Trying Door");
-		if(hasKey) {
-			door.SendMessage("Open");
+		if (hasKey) {
+			door.SendMessage ("Open");
+		} else {
+			door.SendMessage ("Closed");
 		}
 	}
 }

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour {
 
 	public AudioClip open_door;
+	public AudioClip closed_door;
 	private bool doorOpened = false;
 
 	void OnCollisionEnter2D(Collision2D coll) {
@@ -22,6 +23,12 @@ public class Door : MonoBehaviour {
 			StartCoroutine (WaitDelay ());
 		}
 		//MakeNoise and go to next level
+	}
+
+	void Closed(){
+
+		SoundManager.instance.PlaySingle (closed_door);
+	
 	}
 
 	IEnumerator WaitDelay()
