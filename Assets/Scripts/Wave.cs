@@ -9,6 +9,8 @@ public class Wave : MonoBehaviour {
 	private Vector3 maxScale;
 	public AudioClip heart_sound;
 
+	private float heartbeat_speed = 1;
+
 	private float fade_out = 1;
 	private bool on_fade = false;
 
@@ -33,12 +35,13 @@ public class Wave : MonoBehaviour {
 		if((transform.localScale - maxScale).sqrMagnitude < 0.2){
 			if (on_fade == false) 
 			{
+				SoundManager.instance.PlaySingle (heart_sound);
 				StartCoroutine (Fade ());
 				on_fade = true;
 			}
 
 		} else {
-			transform.localScale = Vector3.Lerp(transform.localScale, maxScale, Time.deltaTime*2.2f);
+			transform.localScale = Vector3.Lerp(transform.localScale, maxScale, Time.deltaTime*2.2f*heartbeat_speed);
 
 		}
 	}
@@ -55,7 +58,16 @@ public class Wave : MonoBehaviour {
 		fade_out = 1;
 		my_render.color = new Color (my_render.color.r, my_render.color.g, my_render.color.b, fade_out);
 		transform.localScale = Vector3.one;
-		SoundManager.instance.PlaySingle (heart_sound);
 		on_fade = false;
+	}
+
+	public void IncreaseHeartBeat ()
+	{
+		heartbeat_speed = 10f;
+	}
+
+	public void NormalizeHeartBeat ()
+	{
+		heartbeat_speed = 1f;
 	}
 }
