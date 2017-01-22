@@ -1,0 +1,408 @@
+fileFormatVersion: 2
+guid: f08ddeca66efb7d438d90a54ec240ee3
+timeCreated: 1485000848
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: principal_pedacos_0
+    21300002: principal_pedacos_1
+    21300004: principal_pedacos_6
+    21300006: principal_pedacos_7
+    21300008: principal_pedacos_8
+    21300010: principal_pedacos_9
+    21300012: principal_pedacos_10
+    21300014: principal_pedacos_11
+    21300016: principal_pedacos_12
+    21300018: principal_pedacos_13
+    21300020: principal_pedacos_14
+    21300022: principal_pedacos_15
+    21300024: principal_pedacos_16
+    21300026: principal_pedacos_17
+    21300028: principal_pedacos_18
+    21300030: principal_pedacos_19
+    21300032: principal_pedacos_20
+    21300034: principal_pedacos_21
+    21300036: principal_pedacos_22
+    21300038: principal_pedacos_23
+    21300040: principal_pedacos_2
+    21300042: principal_pedacos_3
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: principal_pedacos_0
+      rect:
+        serializedVersion: 2
+        x: 972.93134
+        y: 1305.7552
+        width: 101.71246
+        height: 57.60083
+      alignment: 9
+      pivot: {x: 0.5070044, y: 0.39486846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_1
+      rect:
+        serializedVersion: 2
+        x: 1110.0258
+        y: 1325.504
+        width: 52.424072
+        height: 42.49597
+      alignment: 9
+      pivot: {x: 0.4763888, y: 0.27051908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_6
+      rect:
+        serializedVersion: 2
+        x: 973.79767
+        y: 1206.6012
+        width: 110.20819
+        height: 56.398804
+      alignment: 9
+      pivot: {x: 0.50542825, y: 0.50353557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_7
+      rect:
+        serializedVersion: 2
+        x: 1114.7976
+        y: 1211.9636
+        width: 63.78589
+        height: 52.435425
+      alignment: 9
+      pivot: {x: 0.49701262, y: 0.5060773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_8
+      rect:
+        serializedVersion: 2
+        x: 448.10056
+        y: 834.85297
+        width: 386.05374
+        height: 342.85114
+      alignment: 9
+      pivot: {x: 0.4996699, y: 0.45397845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_9
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1081
+        width: 56
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_10
+      rect:
+        serializedVersion: 2
+        x: 1297.7009
+        y: 1117.8975
+        width: 45.598267
+        height: 53.598267
+      alignment: 9
+      pivot: {x: 0.49999863, y: 0.47767475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_11
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1133.0565
+        width: 30.10254
+        height: 49.186157
+      alignment: 9
+      pivot: {x: 0.5149067, y: 0.49695852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_12
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1065.9813
+        width: 101
+        height: 79.31995
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49821866}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_13
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 994
+        width: 43
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_14
+      rect:
+        serializedVersion: 2
+        x: 173.63963
+        y: 740.93384
+        width: 181.22688
+        height: 181.21332
+      alignment: 9
+      pivot: {x: 0.5013625, y: 0.48046228}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_15
+      rect:
+        serializedVersion: 2
+        x: 1255.704
+        y: 678.99994
+        width: 196.2959
+        height: 246.77423
+      alignment: 9
+      pivot: {x: 0.5033015, y: 0.5166668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_16
+      rect:
+        serializedVersion: 2
+        x: 1556.2296
+        y: 670.39325
+        width: 164.99988
+        height: 226.24084
+      alignment: 9
+      pivot: {x: 0.5228512, y: 0.5154098}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_17
+      rect:
+        serializedVersion: 2
+        x: 266.7525
+        y: 268.9215
+        width: 315.4947
+        height: 354.0785
+      alignment: 9
+      pivot: {x: 0.5000005, y: 0.47751695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_18
+      rect:
+        serializedVersion: 2
+        x: 949.0304
+        y: 355.47552
+        width: 148.87463
+        height: 248.56018
+      alignment: 9
+      pivot: {x: 0.48678276, y: 0.47885576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_19
+      rect:
+        serializedVersion: 2
+        x: 1219.0001
+        y: 531.32153
+        width: 106.83179
+        height: 137.3216
+      alignment: 9
+      pivot: {x: 0.5054664, y: 0.5074109}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_20
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 545
+        width: 101
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_21
+      rect:
+        serializedVersion: 2
+        x: 737.9889
+        y: 241.90375
+        width: 169.32837
+        height: 242.34164
+      alignment: 9
+      pivot: {x: 0.4843318, y: 0.5058819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_22
+      rect:
+        serializedVersion: 2
+        x: 1038.2079
+        y: 224.35696
+        width: 153.75671
+        height: 102.536865
+      alignment: 9
+      pivot: {x: 0.51569855, y: 0.52315855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_23
+      rect:
+        serializedVersion: 2
+        x: 740.48456
+        y: 72.113434
+        width: 172.67767
+        height: 95.43924
+      alignment: 9
+      pivot: {x: 0.4691715, y: 0.49651033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_2
+      rect:
+        serializedVersion: 2
+        x: 549.01984
+        y: 799.8235
+        width: 130.76685
+        height: 122.2569
+      alignment: 9
+      pivot: {x: 0.42044422, y: 0.50039315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: principal_pedacos_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 255
+        width: 243.11493
+        height: 134.48727
+      alignment: 9
+      pivot: {x: 0.52855664, y: 0.5576736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 97324315009766
+  assetBundleName: 
+  assetBundleVariant: 
