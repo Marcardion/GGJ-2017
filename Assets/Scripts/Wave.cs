@@ -13,6 +13,7 @@ public class Wave : MonoBehaviour {
 
 	private float fade_out = 1;
 	private bool on_fade = false;
+	private bool play_heartbeat = true;
 
 	SpriteRenderer my_render;
 
@@ -35,12 +36,17 @@ public class Wave : MonoBehaviour {
 		if((transform.localScale - maxScale).sqrMagnitude < 0.2){
 			if (on_fade == false) 
 			{
-				SoundManager.instance.PlaySingle (heart_sound);
+				
 				StartCoroutine (Fade ());
 				on_fade = true;
 			}
 
 		} else {
+			if (play_heartbeat) 
+			{
+				SoundManager.instance.PlaySingle (heart_sound);
+				play_heartbeat = false;
+			}
 			transform.localScale = Vector3.Lerp(transform.localScale, maxScale, Time.deltaTime*2.2f*heartbeat_speed);
 
 		}
@@ -59,6 +65,7 @@ public class Wave : MonoBehaviour {
 		my_render.color = new Color (my_render.color.r, my_render.color.g, my_render.color.b, fade_out);
 		transform.localScale = Vector3.one;
 		on_fade = false;
+		play_heartbeat = true;
 	}
 
 	public void IncreaseHeartBeat ()
