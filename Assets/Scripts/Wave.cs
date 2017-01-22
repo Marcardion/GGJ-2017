@@ -33,7 +33,7 @@ public class Wave : MonoBehaviour {
 	}
 
 	void PulseWave() {
-		if((transform.localScale - maxScale).sqrMagnitude < 0.2){
+		if((transform.localScale - maxScale).sqrMagnitude < 2){
 			if (on_fade == false) 
 			{
 				
