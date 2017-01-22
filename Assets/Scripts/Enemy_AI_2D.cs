@@ -52,12 +52,14 @@ public class Enemy_AI_2D : MonoBehaviour {
 				{
 					chase_player = true;
 
-				my_anim.SetTrigger ("Reveal");
+				my_anim.SetBool ("Reveal", true);
 
 				}
 				else 
 				{
 					chase_player = false;
+
+				my_anim.SetBool ("Reveal", false);
 				}
 				
 
@@ -70,6 +72,7 @@ public class Enemy_AI_2D : MonoBehaviour {
 		{
 			GameObject.FindGameObjectWithTag ("SoundWave").GetComponent<Wave> ().NormalizeHeartBeat ();
 			chase_player = false;
+			my_anim.SetBool ("Reveal", false);
 		}
 	}
 
