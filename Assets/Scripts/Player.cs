@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 	
 	private Rigidbody2D pRigidbody;
-	private Animator pAnimator;
+	//private Animator pAnimator;
 	private bool hasKey = false;
 	private float moveForce = 15;
 	//private GameObject soundWave;
@@ -13,7 +13,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		pRigidbody = gameObject.GetComponent<Rigidbody2D>();
-		pAnimator = gameObject.GetComponentInChildren<Animator> ();
+		//pAnimator = gameObject.GetComponentInChildren<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -29,12 +29,12 @@ public class Player : MonoBehaviour {
 		ChangePlayerDirection (moveDirectionX);
 
 		pRigidbody.velocity = new Vector2(moveDirectionX*moveForce, moveDirectionY*moveForce);
-		pAnimator.SetBool ("playerMoving", PlayerIsMoving ());
+		//pAnimator.SetBool ("playerMoving", PlayerIsMoving ());
 	}
 
 	void ChangePlayerDirection(float moveX) {
 		if (moveX != 0) {
-			transform.localScale = new Vector2 (moveX, transform.localScale.y);
+			transform.localScale = new Vector2 (Mathf.Abs(transform.localScale.x)*moveX, transform.localScale.y);
 		}
 	}
 
