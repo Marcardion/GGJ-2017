@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1225425476243056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 87.9, y: 55.9, z: -0.020507812}
+  m_LocalPosition: {x: -7.6, y: 27.5, z: -0.020507812}
   m_LocalScale: {x: 33, y: 33, z: 33}
   m_Children:
   - {fileID: 4734364802812210}
@@ -170,6 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy_hit_clip: {fileID: 8300000, guid: 795120ec719bad74daaee47462628745, type: 3}
+  death: {fileID: 0}
 --- !u!212 &212044212468714108
 SpriteRenderer:
   m_ObjectHideFlags: 1

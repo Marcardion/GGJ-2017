@@ -8,6 +8,7 @@ public class Enemy_AI_2D : MonoBehaviour {
 	private Transform target;
 	private float move_speed = 0.3f;
 	public AudioClip enemy_hit_clip;
+	public GameObject death;
 
 	private Rigidbody2D my_rigidbody;
 
@@ -82,6 +83,9 @@ public class Enemy_AI_2D : MonoBehaviour {
 		if (collision.collider.CompareTag ("Player")) 
 		{
 			Debug.Log ("Attack");
+
+			death.SetActive (true);
+
 			SoundManager.instance.PlaySingle (enemy_hit_clip);
 			StartCoroutine (EndGame ());
 		}

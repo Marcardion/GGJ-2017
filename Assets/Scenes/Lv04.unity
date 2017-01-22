@@ -528,6 +528,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 114118897195769550, guid: 690ab3e995af96443b0e13f0e6af972a,
+        type: 2}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 1690626433}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 690ab3e995af96443b0e13f0e6af972a, type: 2}
   m_IsPrefabParent: 0
@@ -1043,6 +1048,11 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_test (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114118897195769550, guid: 690ab3e995af96443b0e13f0e6af972a,
+        type: 2}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 1690626433}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 690ab3e995af96443b0e13f0e6af972a, type: 2}
   m_IsPrefabParent: 0
@@ -2446,7 +2456,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4200970515044870, guid: aa613a54fc6ac1744ade5cc900939ccc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -41.7
+      value: 26.9
       objectReference: {fileID: 0}
     - target: {fileID: 4200970515044870, guid: aa613a54fc6ac1744ade5cc900939ccc, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5147,6 +5157,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &1690626433 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1648037348720926, guid: aa613a54fc6ac1744ade5cc900939ccc,
+    type: 2}
+  m_PrefabInternal: {fileID: 836898862}
 --- !u!1 &1714044274
 GameObject:
   m_ObjectHideFlags: 0
