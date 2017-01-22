@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Enemy_AI_2D : MonoBehaviour {
 
 	private Transform target;
-	public float move_speed = 0.5f;
+	private float move_speed = 0.3f;
+	public AudioClip enemy_hit_clip;
 
 	private Rigidbody2D my_rigidbody;
 
@@ -81,13 +82,14 @@ public class Enemy_AI_2D : MonoBehaviour {
 		if (collision.collider.CompareTag ("Player")) 
 		{
 			Debug.Log ("Attack");
+			SoundManager.instance.PlaySingle (enemy_hit_clip);
 			StartCoroutine (EndGame ());
 		}
 	}
 
 	IEnumerator EndGame ()
 	{
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (1f);
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 	}
 }
