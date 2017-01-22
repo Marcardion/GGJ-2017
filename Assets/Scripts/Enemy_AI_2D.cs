@@ -10,6 +10,8 @@ public class Enemy_AI_2D : MonoBehaviour {
 
 	private Rigidbody2D my_rigidbody;
 
+	Animator my_anim;
+
 	private bool chase_player = false;
 
 	private Vector3 start_pos;
@@ -17,6 +19,7 @@ public class Enemy_AI_2D : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		my_rigidbody = GetComponent<Rigidbody2D> ();
+		my_anim = GetComponent<Animator> ();
 		start_pos = transform.position;
 		target = GameObject.FindGameObjectWithTag ("Player").transform;
 	}
@@ -48,6 +51,9 @@ public class Enemy_AI_2D : MonoBehaviour {
 				if (hit.collider.CompareTag ("Player")) 
 				{
 					chase_player = true;
+
+				my_anim.SetTrigger ("Reveal");
+
 				}
 				else 
 				{
