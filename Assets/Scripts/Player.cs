@@ -5,15 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 	
 	private Rigidbody2D pRigidbody;
-	//private Animator pAnimator;
-	private bool hasKey = false;
+	private bool hasKey;
 	private float moveForce = 15;
-	//private GameObject soundWave;
+	private bool controllerEnabled;
 
 	// Use this for initialization
 	void Start () {
 		pRigidbody = gameObject.GetComponent<Rigidbody2D>();
-		//pAnimator = gameObject.GetComponentInChildren<Animator> ();
+		controllerEnabled = true;
+		hasKey = false;
 	}
 	
 	// Update is called once per frame
@@ -22,15 +22,16 @@ public class Player : MonoBehaviour {
 		float moveDirectionX = Input.GetAxisRaw("Horizontal");
 		float moveDirectionY = Input.GetAxisRaw("Vertical");
 
-		ChangePlayerDirection (moveDirectionX);
-
-		pRigidbody.velocity = new Vector2(moveDirectionX*moveForce, moveDirectionY*moveForce);
-		//pAnimator.SetBool ("playerMoving", PlayerIsMoving ());
+		if(controllerEnabled) {
+			ChangePlayerDirection (moveDirectionX);
+			pRigidbody.velocity = new Vector2(moveDirectionX*moveForce, moveDirectionY*moveForce);
+		}
 	}
 
-	void ChangePlayerDirection(float moveX) {
-		if (moveX != 0) {
-			transform.localScale = new Vector2 (Mathf.Abs(transform.localScale.x)*moveX, transform.localScale.y);
+	void ChangePlayerDirection(float moveDirection) {
+		//moveDirection 1 = right / -1 = left
+		if (moveDirection != 0) {
+			transform.localScale = new Vector2 (Mathf.Abs(transform.localScale.x)*moveDirection, transform.localScale.y);
 		}
 	}
 
@@ -49,34 +50,10 @@ public class Player : MonoBehaviour {
 	void TryDoor(GameObject door) {
 		Debug.Log("Trying Door");
 		if (hasKey) {
+			controllerEnabled = false;
 			door.SendMessage ("Open");
 		} else {
 			door.SendMessage ("Closed");
 		}
 	}
 }
-
-
-
-//protected IEnumerator SmoothMovement (Vector3 end)
-//{
-//	//Calculate the remaining distance to move based on the square magnitude of the difference between current position and end parameter. 
-//	//Square magnitude is used instead of magnitude because it's computationally cheaper.
-//	float sqrRemainingDistance = (transform.position - end).sqrMagnitude;
-//
-//	//While that distance is greater than a very small amount (Epsilon, almost zero):
-//	while(sqrRemainingDistance > float.Epsilon)
-//	{
-//		//Find a new position proportionally closer to the end, based on the moveTime
-//		Vector3 newPostion = Vector3.MoveTowards(rb2D.position, end, inverseMoveTime * Time.deltaTime);
-//
-//		//Call MovePosition on attached Rigidbody2D and move it to the calculated position.
-//		rb2D.MovePosition (newPostion);
-//
-//		//Recalculate the remaining distance after moving.
-//		sqrRemainingDistance = (transform.position - end).sqrMagnitude;
-//
-//		//Return and loop until sqrRemainingDistance is close enough to zero to end the function
-//		yield return null;
-//	}
-//}
