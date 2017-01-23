@@ -22,10 +22,6 @@ public class Player : MonoBehaviour {
 		float moveDirectionX = Input.GetAxisRaw("Horizontal");
 		float moveDirectionY = Input.GetAxisRaw("Vertical");
 
-		if(moveDirectionX != 0) {
-			moveDirectionY = 0;
-		}
-
 		ChangePlayerDirection (moveDirectionX);
 
 		pRigidbody.velocity = new Vector2(moveDirectionX*moveForce, moveDirectionY*moveForce);
